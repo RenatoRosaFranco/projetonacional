@@ -21,7 +21,17 @@
   font-family: 'Open Sans', sans-serif, serif;
   font-size: 16px;
  }
+
+ .bold {
+  position: relative;
+  font-weight: bold;
+ }
  .padding {
   position: relative;
   padding: 10px;
+ }
+ .navbar-default {
+  position: fixed;
+  background: #EEE;
+  border: 1px solid #EEE;
  }

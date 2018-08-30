@@ -4,11 +4,13 @@
 	<%= notice %>
 </div>
 
-<div id="presenter" class="jumbotron">
+<div id="presenter" class="jumbotron" style="heigth: 500px !important;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				
+				<ul class="list-unstyled text-center">
+					
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -138,7 +140,7 @@ margin-top: 50px; margin-bottom: 50px;">
 						</strong></h4></li>
 						<li>Read Continue 
 							<span class='badge' style="padding: 5px; 
-							border-radius: 30	px;">></span>
+							border-radius: 30px;">></span>
 						</li>
 					</ul>
 				</div>
@@ -192,7 +194,8 @@ margin-top: 50px; margin-bottom: 50px;">
 	</div>
 </div>
 
-<div id="contact" style="background-color: #f6f7fa; margin-top: 50px; padding-bottom: 40px;">
+<div id="contact" style="background-color: #f6f7fa; 
+margin-top: 50px; padding-bottom: 40px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -202,39 +205,7 @@ margin-top: 50px; margin-bottom: 50px;">
 				</ul>
 
 				<div class="col-md-12">
-					<%= form_for(:contact) do |f| %>
-					<div class="panel panel-default padding" style="padding-bottom: 25px;">
-						<div class="row">
-							<div class="col-md-4">
-								<div class='padding'>
-								<%= f.label :'Nome' %>
-								<%= f.text_field :name, class: 'form-control', required: 'required', placeholder: 'Digite o nome', autocomplete: 'off' %>	
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="padding">
-								<%= f.label :'E-mail' %>
-								<%= f.text_field :email, class: 'form-control', required: 'required', placeholder: 'Digite o e-mail', autocomplete: 'off' %>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="padding">
-								<%= f.label :'Assunto' %>
-								<%= f.text_field :subject, class: 'form-control', required: 'required', placeholder: 'Digite o assunto', autocomplete: 'off' %>
-								</div>	
-							</div>
-							<div class="col-md-12">
-								<div class='field padding'>
-								<%= f.label :'Mensagem' %>
-								<%= f.text_area :message, class: 'form-control', required: 'required', placeholder: 'Digite sua Mensagem', autocomplete: 'off', style: 'height: 200px; resize: none;' %>	
-								</div>
-							</div>
-							<div class="col-md-12 text-center"><br>
-								<%= f.submit 'Enviar Mensagem',  class: 'btn btn-primary btn-lg top' %>
-							</div>
-						</div>
-					</div>
-					<% end %>
+					<%= render partial: 'contact/form' %>
 				</div>
 			</div>
 		</div>
