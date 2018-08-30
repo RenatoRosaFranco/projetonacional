@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Projetonacional</title>
+    <title>Projeto Nacional - <%= yield :title %></title>
+    <meta charset="utf-8">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style type="text/css"><%= yield :css %></style>
+    <script type="text/javascript"><%= yield :js %></script>
   </head>
 
-  <body>
+  <body class="<%= controller.controller_name %>">
+    <%= render partial: 'layouts/header' %>
     <%= yield %>
+    <%= render partial: 'layouts/footer' %>
   </body>
 </html>
