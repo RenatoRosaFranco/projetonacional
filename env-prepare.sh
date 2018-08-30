@@ -7,7 +7,7 @@ prepare(){
   rails db:drop RAILS_ENV=$1
  fi
  rails db:create RAILS_ENV=$1 && rails db:migrate RAILS_ENV=$1
- rails db:seed RAILS_ENV=$1
+ rails ydb:seed RAILS_ENV=$1
  rspec; rubocop;  rails_best_practices; brakeman
  echo "environment prepapred as $1"
 }
