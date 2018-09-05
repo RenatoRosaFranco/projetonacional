@@ -45,14 +45,13 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_bot_rails'
   gem 'devise'
-  gem 'bootstrap-sass'
   gem 'jquery-rails'
-  gem 'better_errors'
-  gem 'rubocop'
-  gem 'rails_best_practices'
+  gem 'bootstrap-sass'
+  gem 'font-awesome-rails'
   gem 'brakeman'
   gem 'kaminari'
   gem 'pundit'
+  gem 'alertifyjs-rails'
 end
 
 group :development do

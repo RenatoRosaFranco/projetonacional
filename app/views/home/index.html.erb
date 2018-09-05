@@ -4,12 +4,20 @@
 	<%= notice %>
 </div>
 
-<div id="presenter" class="jumbotron" style="heigth: 500px !important;">
+<div id="presenter" class="jumbotron" style="heigth: 500px !important;
+background-color: #f6f7fa;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<ul class="list-unstyled text-center">
-					
+				<ul class="list-unstyled">
+					<li><h1>STARTUPHUB</h1></li>
+					<li><p>O ponto de partida para seu negócio.	</p></li>
+					<ul class="list-unstyled list-inline">
+						<li><%= link_to 'Inscreva-se', '', 
+						class: 'btn btn-primary btn-lg top' %></li>
+						<li><%= link_to 'Contato', '',
+						class: 'btn btn-primary btn-lg top' %></li>
+					</ul>
 				</ul>
 			</div>
 		</div>
@@ -29,24 +37,31 @@
 				</div>
 
 				<div class="col-md-6">
-					<h1>Our simple & powerful dashboard</h1><br>
-					<p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+					<h1><b>Transforme</b> o <br><b>mundo</b> 
+					com suas ideias</h1><br>
+					<p>StartupHub é ums eco-sistema para startups
+					criada para quem é empreendedor, quem quer empreeder,
+					e quem quer conhecer de fato o empreendedorismo, nossa
+					faco na criação e direcionamento de startups nacionais.	
+					criando produtos locais de sucesso e alavancando a economia
+					de nosso pais, região.
+					</p>
 
 					<div class="col-md-6">
-						<h3><i class='glyphicon glyphicon-search'></i> 
-						Retina Ready</h3>
+						<h3><%= fa_icon 'check-circle' %> 
+						Empreendeender</h3>
 					</div>
 					<div class="col-md-6">
-						<h3><i class='glyphicon glyphicon-search'></i> 
-						Retina Ready</h3>
+						<h3><%= fa_icon 'check-circle' %>
+						Inovação</h3>
 					</div>
 					<div class="col-md-6">
-						<h3><i class='glyphicon glyphicon-search'></i> 
-						Retina Ready</h3>
+						<h3><%= fa_icon 'check-circle' %> 
+						Startups</h3>
 					</div>
 					<div class="col-md-6">
-						<h3><i class='glyphicon glyphicon-search'></i> 
-						Retina Ready</h3>
+						<h3><%= fa_icon 'check-circle' %> 
+						Incubadoras</h3>
 					</div>
 				</div>
 			</div>
@@ -60,23 +75,84 @@
 			<div class="col-md-12">
 
 				<div class="col-md-7">
-					<h1><strong>We provide features that <br>
-					you need !</strong></h1>
+					<h1><strong>Temos as soluções certas para<br>
+					você ou seu negócio!</strong></h1>
 					<hr>
 
-					<% for i in 1..6 %>
-					  <div class="col-md-6">
+					
+					  <div class="col-md-6" style="padding: 10px;">
 					  	<div class="media">
 					  		<div class="media-left">
-					  			<i class="glyphicon glyphicon-search media-object"></i>
+					  			<%= fa_icon 'rocket', class: 'media-object',
+					  			style: 'font-size: 38px;' %>
 					  		</div>
 					  		<div class="media-body">
-					  			<h4 class="media-header"><strong>Perfect Dashboard</strong></h4>
-					  			<p>There's lot of hate out there for a text that amounts to little more than garbled words.</p>
+					  			<h4 class="media-heading"><strong>Brain Storm</strong></h4>
+					  			<p>Tempestade de ideias pela qual nasce o produto.</p>
 					  		</div>
 					  	</div>
 					  </div>
-					<% end %>
+					  <div class="col-md-6" style="padding: 10px;">
+					  	<div class="media">
+					  		<div class="media-left">
+					  			<%= fa_icon 'rocket', class: 'media-object',
+					  			style: 'font-size: 38px;' %>
+					  		</div>
+					  		<div class="media-body">
+					  			<h4 class="media-heading"><strong>Validação da ideia</strong></h4>
+					  			<p>Reconstrução e validação da ideia proposta.</p>
+					  		</div>
+					  	</div>
+					  </div>
+					  <div class="col-md-6" style="padding: 10px;">
+					  	<div class="media">
+					  		<div class="media-left">
+					  			<%= fa_icon 'rocket', class: 'media-object',
+					  			style: 'font-size: 38px;' %>
+					  		</div>
+					  		<div class="media-body">
+					  			<h4 class="media-heading"><strong>Canvas & MVP</strong></h4>
+					  			<p>Criação do canvas e de um minimo produto viavel.</p>
+					  		</div>
+					  	</div>
+					  </div>
+					  <div class="col-md-6" style="padding: 10px;">
+					  	<div class="media">
+					  		<div class="media-left">
+					  			<%= fa_icon 'rocket', class: 'media-object',
+					  			style: 'font-size: 38px;' %>
+					  		</div>
+					  		<div class="media-body">
+					  			<h4 class="media-heading"><strong>Desenvolvimento</strong></h4>
+					  			<p>Desenvolvendo a ideia, transformando-a em algo real.</p>
+					  		</div>
+					  	</div>
+					  </div>
+					  <div class="col-md-6" style="padding: 10px;">
+					  	<div class="media">
+					  		<div class="media-left">
+					  			<%= fa_icon 'rocket', class: 'media-object',
+					  			style: 'font-size: 38px;' %>
+					  		</div>
+					  		<div class="media-body">
+					  			<h4 class="media-heading"><strong>Marketing</strong></h4>
+					  			<p>Criando uma imagem forte e positiva para seu ideia.</p>
+					  		</div>
+					  	</div>
+					  </div>
+					  <div class="col-md-6" style="padding: 10px;">
+					  	<div class="media">
+					  		<div class="media-left">
+					  			<%= fa_icon 'rocket', class: 'media-object',
+					  			style: 'font-size: 38px;' %>
+					  		</div>
+					  		<div class="media-body">
+					  			<h4 class="media-heading"><strong>Mercado</strong></h4>
+					  			<p>Prospectando, analisando e colocando sua ideia no mercado.</p>
+					  		</div>
+					  	</div>
+					  </div>
+
 				</div>
 				<div class="col-md-5">
 				   <div class="jumbotron">
@@ -93,17 +169,42 @@ margin-top: 50px; margin-bottom: 50px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<% for i in 1..4 %>
 				   <div class="col-md-3">
-				   		<div class="panel panel-default">
+				   		<div class="panel panel-default" style="padding: 40px;">
 				   			<ul class="list-unstyled text-center">
-				   				<li><h1><i class="glyphicon glyphicon-search"></i></h1></li>
-				   				<li><p>Total Hits</p></li>
-				   				<li><h3>55,000</h3></li>
+				   				<li><h1 style="font-size: 50px;"><%= fa_icon 'rocket' %></h1></li>
+				   				<li><p>Startups <br>Auxiliadas</p></li>
+				   				<li><h3 style="font-size: 40px;"><b>55,000</b></h3></li>
 				   			</ul>
 				   		</div>
 				   </div>
-				<% end %>
+				   <div class="col-md-3">
+				   		<div class="panel panel-default" style="padding: 40px;">
+				   			<ul class="list-unstyled text-center">
+				   				<li><h1 style="font-size: 50px;"><%= fa_icon 'rocket' %></h1></li>
+				   				<li><p>Projetos <br>sucedidos.</p></li>
+				   				<li><h3 style="font-size: 40px;"><b>55,000</b></h3></li>
+				   			</ul>
+				   		</div>
+				   </div>
+				   <div class="col-md-3">
+				   		<div class="panel panel-default" style="padding: 40px;">
+				   			<ul class="list-unstyled text-center">
+				   				<li><h1 style="font-size: 50px;"><%= fa_icon 'rocket' %></h1></li>
+				   				<li><p>Doações Arrecadadas.</p></li>
+				   				<li><h3 style="font-size: 40px;"><b>55,000</b></h3></li>
+				   			</ul>
+				   		</div>
+				   </div>
+				   <div class="col-md-3">
+				   		<div class="panel panel-default" style="padding: 40px;">
+				   			<ul class="list-unstyled text-center">
+				   				<li><h1 style="font-size: 50px;"><%= fa_icon 'rocket' %></h1></li>
+				   				<li><p>Inovações <br>propostas.</p></li>
+				   				<li><h3 style="font-size: 40px;"><b>55,000</b></h3></li>
+				   			</ul>
+				   		</div>
+				   </div>
 			</div>
 		</div>
 	</div>
@@ -113,8 +214,12 @@ margin-top: 50px; margin-bottom: 50px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2 class="text-center"text">Subscribe our newsletter</h2><br>
-				<p class="text-center">it will always have a place in the web workers toolbox, as things happen, not always the way you like it,<br> not always in the preferred order.</p><br>
+				<h2 class="text-center"text">
+				<strong>Inscreva-se para participar </strong></h2><br>
+				<p class="text-center">Efetue seu cadastro, lhe avisaremos
+				assim que nossa nova plataforma estiver no ar.<br>  
+				Não perca essa chance de iniciar ou alavancar 
+				seus negócios.</p><br>
 				
 				<%= render 'subscriptions/form' %>
 			</div>
@@ -127,7 +232,7 @@ margin-top: 50px; margin-bottom: 50px;">
 		<div class="row">
 			<div class="col-md-12">
 				<ul class="list-unstyled text-center">
-					<li><h1>Update from our blog post</h1></li>
+					<li><h1>Acompanhe nosso blog</h1></li>
 					<li><hr></li>
 				</ul><br>
 
@@ -138,9 +243,8 @@ margin-top: 50px; margin-bottom: 50px;">
 						<li><p>May 10th, 2017</p></li>
 						<li><h4><strong>This is our latest dashboard design new features
 						</strong></h4></li>
-						<li>Read Continue 
-							<span class='badge' style="padding: 5px; 
-							border-radius: 30px;">></span>
+						<li>  
+							Read Continue <%= fa_icon 'chevron-right' %>
 						</li>
 					</ul>
 				</div>
@@ -155,7 +259,7 @@ margin-top: 50px; margin-bottom: 50px;">
 		<div class="row">
 			<div class="col-md-12">
 				<ul class="list-unstyled text-center" style="padding-top: 30px; padding-bottom: 50px">
-					<li><h1>Frequently asked some questions</h1></li>
+					<li><h1>Perguntas Frequentes</h1></li>
 					<li><hr></li>
 				</ul>
 
@@ -177,7 +281,7 @@ margin-top: 50px; margin-bottom: 50px;">
 		<div class="row">
 			<div class="col-md-12">
 				<ul class="list-unstyled text-center">
-					<li><h1>Partners</h1></li>
+					<li><h1>Parceiros</h1></li>
 					<li><hr></li>
 				</ul>
 
@@ -200,7 +304,7 @@ margin-top: 50px; padding-bottom: 40px;">
 		<div class="row">
 			<div class="col-md-12">
 				<ul class="list-unstyled text-center">
-					<li><h1>Get in touch</h1></h1></li>
+					<li><h1>Fale conosco</h1></h1></li>
 					<li><hr></li>
 				</ul>
 

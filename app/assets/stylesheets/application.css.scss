@@ -15,6 +15,10 @@
  */ 
  @import 'bootstrap';
  @import 'bootstrap-sprockets';
+ @import 'font-awesome';
+ @import 'alertify';
+ @import 'alertify/default';
+ @import 'alertify/bootstrap';
 
  body {
   position: relative;
@@ -32,6 +36,13 @@
  }
  .navbar-default {
   position: fixed;
-  background: #EEE;
+  background-color: #f6f7fa;
   border: 1px solid #EEE;
+ }
+ footer {
+  position: relative;
+  margin-top: 0px;
+  background-image: url('pink-footer-bg.jpg') no-repeat scroll center;  
+  background-size: cover;
+  margin-bottom: 10px !important;
  }

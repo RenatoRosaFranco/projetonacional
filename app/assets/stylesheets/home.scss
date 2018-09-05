@@ -1,3 +1,92 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.home {
+	#signup {
+		h2 {
+		 position: relative;
+		 font-weigth: bold;
+		 font-size: 45px;
+		}
+
+		p {
+		 position: relative;
+		 font-size: 22px;
+		}
+
+		form {
+			input[type=email], input[type=text], select {
+			 position: relative;
+			 padding: 25px;
+			 border-radius: 25px;
+			 background-color: #f6f7fa;
+			}
+			
+			input[type=submit] {
+			 position: relative;
+			 margin-top: 20px;
+			 border: 1px solid #000;
+			 color: #000;
+			 background-color: inherit;
+			 padding: 20px;
+			 width: 220px;
+			 text-transform: uppercase;
+			}
+		}
+	}	
+
+	#contact {
+		position: relative;
+
+		h1 {
+		 position: relative;
+		 font-weight: bold;
+		 padding: 50px 0px 40px 0px;
+		 font-size: 45spx;
+		}
+		form {
+			position: relative;
+
+			::-webkit-input-placeholder {
+			 text-transform: uppercase;
+			}
+
+			div {
+			 position: relative;
+			 padding: 15px;
+			}
+
+			input[type=text], input[type=email] {
+			  position: relative;
+			  border: 0px;
+			  color: #EEE;
+			  border-bottom: 2px solid #EEE;
+			  transition: 0.5s;
+			  border-radius: 0px;
+			  box-shadow: 0px;
+			  &.focus, &:focus {
+			  	transition: 0.5s;
+			  	border-bottom: 2px solid #000;
+			  }
+			}
+			textarea {
+			  position: relative;
+			  border: 0px;
+			  resize: none;
+			  border-bottom: 2px solid #EEE;
+			  transition: 0.5s;
+			  &.focus, &:focus {
+			  	position: relative;
+			  	border-bottom: 2px solid #000;
+			  }
+			}
+			input[type=submit] {
+				position: relative;
+				padding: 15px;
+				border-radius: 25px;
+				width: 220px;
+				text-transform: normal;
+			}
+		}
+	}
+}
