@@ -1,18 +1,28 @@
-<%= form_for(:subscription, {url: subscriptions_path, method: :post}) do |f| %>
+<%= form_for(:subscription, {url: subscriptions_path, 
+	method: :post, remote: true }) do |f| %>
 	<div class="field col-md-4">
 		<%= f.label :'Nome'	 %>
+		<div class='input-group'>
+			<div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
 		<%= f.text_field :name, class: 'form-control', required: 'required',
 		placeholder: 'Digite o nome', autocomplete: 'off' %>
+		</div>
 	</div>
 	<div class="field col-md-4">
 		<%= f.label :'E-mail' %>
+		<div class='input-group'>
+			<div class='input-group-addon'><i class='glyphicon glyphicon-search'></i></div>
 		<%= f.email_field :email, class: 'form-control', required: 'required',
 		placeholder: 'Digite o nome', autocomplete: 'off' %>
+		</div>
 	</div>
 	<div class="field col-md-4">
 		<%= f.label :'Perfil' %><br>
-		<%= f.select :profile, %w{Empreendedor Startup Investidor}, {},
-		{class: 'form-control' 	} %>
+		<div class='input-group'>
+			<div class='input-group-addon'><i class='glyphicon glyphicon-search'></i></div>
+		<%= f.select :profile, %w{Empreendedor Startup Investidor Universitário Estudante}, {prompt: 'Selecione a opção'},
+		{class: 'form-control'} %>
+		</div>
 	</div>
 	<div class="actions col-md-12 text-center"><br>
 		<%= f.submit 'Inscreva-me', class: 'btn btn-primary btn-lg top' %>
